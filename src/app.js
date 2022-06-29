@@ -20,7 +20,7 @@ const app = express();
 
 app.set("view engine", "hbs");
 app.set('views', path.join(__dirname, '/../views'));
-console.log("hello neha")
+console.log(path.join(__dirname, '/../views'))
 
 app.set("socket",socket)
 
@@ -57,7 +57,7 @@ app.use("/", routes);
 app.use((req, res, next) => {
   next(new ApiError(httpStatus.NOT_FOUND, "Not found"));
 });
-
+//hello neha
 // convert error to ApiError, if needed
 app.use(errorConverter);
 
