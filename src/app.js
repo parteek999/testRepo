@@ -20,7 +20,7 @@ const app = express();
 
 app.set("view engine", "hbs");
 app.set('views', path.join(__dirname, '/../views'));
-// console.log(path.join(__dirname, '/../views'))
+console.log("hello neha")
 
 app.set("socket",socket)
 
